@@ -1,0 +1,188 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background-color: #ccc;
+}
+nav .logo{
+    font-size: 35px;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    position: relative;
+    margin: 0px 9px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0% ;
+    left: 0%;
+    background-color: black;
+    width: 0;
+    height: 2.5px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+.flex-box{
+    display: flex;
+    width: 1000px;
+    margin: 15px auto;
+}
+.left{
+    width: 40%;
+}
+.big-img{
+    width: 600px;
+    height: 800px;
+}
+.big-img img{
+    width: inherit;
+    height: inherit;
+    cursor: crosshair;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    width: 150%;
+    margin-top: 15px;
+}
+.small-img{
+    width: 150px;
+    overflow: hidden;
+    border: 1.5px solid  #ccc ;
+    margin: 2px;
+    max-height: fit-content;
+}
+.small-img img{
+    width: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.small-img:hover img{
+    transform: scale(1.2);
+}
+.url{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(0, 102, 255);
+    cursor: pointer;
+}
+.pname{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.ratings i{
+    color: rgb(255, 136, 0);
+}
+.price{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.size{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center; 
+}
+.size p{
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+}
+.psize{
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #1b1b1a;
+    background-color: black;
+    color: #f1efef;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.psize.active .psize{
+    border-width: 1.5px;
+    color: #ff5e00;
+    font-weight: 500;
+}
+.psize.active:hover{
+    background-color:#ff5e00
+}
+.psize:hover{
+    background-color: #ff3c00;
+}
+.quantity{
+    display: flex;
+}
+.quantity p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.quantity input{
+    width: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+}
+.btn-box{
+    display: flex;
+    margin-top: 40px;
+}
+.btn-box button{
+    font-size: 18px;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+.cart-btn{
+    background-color: #ff5e00;
+    margin-right: 20px;
+}
+.buy-btn{
+    background-color: #00aeff;
+}
+.cart-btn:hover{
+    background-color: #ff3c00;
+}
+.buy-btn:hover{
+    background-color: #0066ff;
+}
+.com{
+    position: relative;
+    left: 700px;
+    bottom: 900px;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    cursor: pointer;
+}
